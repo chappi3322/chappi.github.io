@@ -1,0 +1,212 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	font-weight: 600;
+	font-size: 1.6em;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 1.07em;
+	margin-bottom: 10px; 
+	margin-top: 5px; 
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	width: 900px;
+}
+
+.search {
+	margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.articles {
+	margin-top: 40px;
+}
+
+.dark-theme-input {
+	position: relative;
+	width: 350px;
+	height: 45px;
+	border: none;
+	border-radius: 50px;
+	padding-left: 20px;
+	outline: none;
+	color: #403b3b;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.05em;
+	font-weight: 400;
+	transform: translateX(200px);
+	opacity: 0;
+}
+
+.input::-webkit-input-placeholder {color: #93949e;font-family: 'Open Sans', sans-serif;font-size: 1.05em;font-weight: 400;}
+.input::-moz-placeholder          {color: #93949e;font-family: 'Open Sans', sans-serif;font-size: 1.05em;font-weight: 400;}
+.input:-moz-placeholder           {color: #93949e;font-family: 'Open Sans', sans-serif;font-size: 1.05em;font-weight: 400;}
+.input:-ms-input-placeholder      {color: #93949e;font-family: 'Open Sans', sans-serif;font-size: 1.05em;font-weight: 400;}
+
+.dark-submit {
+	background: url(../icons/search.png) no-repeat center;
+	position: absolute;
+	margin-left: 180px;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	transform: translateX(-180px);
+}
+
+.submit img {
+	margin-top: 24px;
+}
+
+.dark-submit-active {
+	transition: 0.45s ease-out;
+	transform: translateX(0);
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	box-shadow: 0 2px 10px 5px rgba(48, 128, 122, 0.7);
+	background-color: #0fb4a8;
+}
+
+.input-active {
+	-webkit-transition: 0.25s ease-out;
+	-webkit-transition-delay: 0.4s;
+	-moz-transition: 0.25s ease-out;
+	-moz-transition-delay: 0.4s;
+	transition: 0.25s ease-out;
+	transition-delay: 0.3s;
+	transform: translateX(0) !important;
+	opacity: 1 !important;
+}
+
+.results {
+	margin-top: 10px;
+	text-align: left;
+	border-bottom: 1px solid #5f6582;
+}
+
+.theme-color {
+	position: absolute;
+	right: 0;
+	display: flex;
+}
+
+.dark-theme {
+	width: 60px;
+	text-align: center;
+	margin: 0 10px;
+	color: #07c1fc;
+	background: #1f1e29;
+	font-weight: 600;
+	border-radius: 7px;
+	padding: 5px;
+	box-shadow: 0 3px 10px 1px rgba(0,0,0,0.7);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.dark-theme-body {
+	background: #1f1e29;
+	transition: 0.3s ease-out;
+}
+
+.dark-theme-a {
+	color: #07c1fc;
+	transition: 0.3s ease-out;
+}
+
+.dark-theme-p {
+	color: #f3f3f3;
+	transition: 0.3s ease-out;
+}
+
+.light-submit {
+	background: url(../icons/search2.png) no-repeat center;
+	position: absolute;
+	margin-left: 180px;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	transform: translateX(-180px);
+}
+
+.light-submit-active {
+	background: url(../icons/search.png) no-repeat center;
+	transition: 0.45s ease-out;
+	transform: translateX(0);
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	box-shadow: 0 2px 10px 5px rgba(88, 11, 16, 0.51);
+	background-color: #c31f3f;
+}
+
+.light-theme {
+	width: 60px;
+	display: flex;
+    justify-content: center;
+	color: #ff4a14;
+	background: #f2f2f2;
+	font-weight: 600;
+	border-radius: 7px;
+	padding: 6px;
+	box-shadow: 0 3px 10px 1px rgba(0,0,0,0.7);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.light-theme-input {
+	position: relative;
+	width: 350px;
+	height: 45px;
+	border: none;
+	border-radius: 50px;
+	padding-left: 20px;
+	outline: none;
+	color: #403b3b;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.05em;
+	font-weight: 400;
+	transform: translateX(200px);
+	opacity: 0;
+	box-shadow: 0 3px 9px 0px rgba(86, 81, 81, 0.76);
+}
+
+.light-theme-body {
+	background: #f2f2f2;
+	transition: 0.3s ease-out;
+}
+
+.light-theme-a {
+	color: #ff4a14;
+	transition: 0.3s ease-out;
+}
+
+.light-theme-p {
+	color: #0d0648;
+	transition: 0.3s ease-out;
+}
